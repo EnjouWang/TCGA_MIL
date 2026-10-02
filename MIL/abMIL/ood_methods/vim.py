@@ -2,6 +2,8 @@
 VIM (Virtual-logit Matching) OOD Detection
 Reference: Wang et al., "ViM: Out-Of-Distribution with Virtual-logit Matching", CVPR 2022
 Adapted from: https://github.com/remic-othr/OpenMIBOOD
+Copyright (c) 2021 Jingkang Yang. Licensed under the MIT License;
+see THIRD_PARTY_NOTICES.md at the repo root for the full license text.
 """
 
 import numpy as np

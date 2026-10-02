@@ -2,6 +2,8 @@
 KNN OOD Detection
 Reference: Sun et al., "Out-of-Distribution Detection with Deep Nearest Neighbors", ICML 2022
 Adapted from: https://github.com/remic-othr/OpenMIBOOD
+Copyright (c) 2021 Jingkang Yang. Licensed under the MIT License;
+see THIRD_PARTY_NOTICES.md at the repo root for the full license text.
 """
 
 import numpy as np

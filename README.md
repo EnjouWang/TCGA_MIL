@@ -381,3 +381,11 @@ full list.
 - Patch-level training uses batch size 1 (one bag per step); `batch_size`
   only applies to slide-level training.
 - The split scripts assume TCGA barcode file names (see Setup, step 3).
+
+---
+
+## Third-party code
+
+`MIL/abMIL/ood_methods/vim.py`, `knn.py` and `residual.py` are adapted from
+[OpenMIBOOD](https://github.com/remic-othr/OpenMIBOOD) (MIT License). See
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for the license text.

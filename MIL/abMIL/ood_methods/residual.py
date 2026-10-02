@@ -3,6 +3,8 @@ Residual OOD Detection
 Reference: Zaeemzadeh et al.,
            "Out-of-Distribution Detection Using Union of 1-Dimensional Subspaces", CVPR 2021
 Adapted from: https://github.com/remic-othr/OpenMIBOOD
+Copyright (c) 2021 Jingkang Yang. Licensed under the MIT License;
+see THIRD_PARTY_NOTICES.md at the repo root for the full license text.
 
 與 VIM 的關係：
   VIM   score = -vlogit * alpha + energy  (null-space norm + energy 混合)
