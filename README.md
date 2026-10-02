@@ -384,6 +384,10 @@ full list.
 
 ---
 
+## License
+
+This project is released under the [MIT License](LICENSE), Copyright (c) 2026 IIR.
+
 ## Third-party code
 
 `MIL/abMIL/ood_methods/vim.py`, `knn.py` and `residual.py` are adapted from
