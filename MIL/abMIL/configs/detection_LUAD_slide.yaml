@@ -1,0 +1,27 @@
+# Experiment: Tumor detection (LUAD)
+experiment_name: detection_LUAD_slide
+task: detection
+task_type: slide
+cancer_type: LUAD
+
+# Relative paths resolve against the repo root.
+csv_dir: data/4_fold/detection_LUAD_slide
+# Machine-specific: root of the feature .pt files (CSV paths are relative to it).
+# Leave null and pass --feature_root to run_experiment.sh, or fill it in here.
+feature_root: null
+
+# Feature dimension of the foundation model (CHIEF / CHIEF_WSI = 768)
+in_dim: 768
+batch_size: 4         # slides per step (patch-level always uses 1 bag per step)
+
+# Output
+save_base_dir: experiments
+
+# WandB
+wandb_project: detection_LUAD_abMIL_slide
+
+# Training hyperparameters
+lr: 0.00001
+patience: 3
+num_epochs: 20
+seed: 42

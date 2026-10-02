@@ -1,0 +1,14 @@
+# Install PyTorch first, matching your CUDA version: https://pytorch.org/get-started/locally/
+# (tested with torch 2.10.0 + CUDA 12.8, Python 3.10)
+torch
+numpy==2.2.6
+pandas==2.3.3
+scikit-learn==1.7.2
+PyYAML==6.0.3
+tqdm==4.67.3
+matplotlib==3.10.8
+wandb==0.25.1
+python-dotenv==1.2.2
+# post-hoc OOD methods
+scipy==1.15.3        # vim
+faiss-cpu==1.13.2    # knn

@@ -1,0 +1,8 @@
+.env
+__pycache__/
+data/
+patch_embeddings/
+slide_embeddings/
+experiments/
+wandb/
+*.log

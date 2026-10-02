@@ -1,0 +1,26 @@
+# subtype_LUAD_vs_LUSC.yaml
+# Task: Binary classification  LUAD(0) vs LUSC(1)  using slide-level embeddings
+
+experiment_name: subtype_LUAD_vs_LUSC
+task_type: slide   # signals run_experiment.sh to use train_slide.py / test_slide.py
+
+# Relative paths resolve against the repo root.
+csv_dir: data/4_fold/subtype_LUAD_vs_LUSC_slide
+# Machine-specific: root of the feature .pt files (CSV paths are relative to it).
+# Leave null and pass --feature_root to run_experiment.sh, or fill it in here.
+feature_root: null
+
+# Feature dimension of the foundation model (CHIEF / CHIEF_WSI = 768)
+in_dim: 768
+batch_size: 4         # slides per step (patch-level always uses 1 bag per step)
+
+save_base_dir: experiments
+
+# Training hyperparameters
+num_epochs: 100
+lr: 0.0001
+patience: 15
+seed: 42
+
+# WandB
+wandb_project: subtype_LUAD_vs_LUSC_abMIL
